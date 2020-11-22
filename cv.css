@@ -1,0 +1,225 @@
+/******************************** tag /********************************/
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    position: center;
+}
+
+
+/******************************** class /********************************/
+
+.middle-container {
+    margin-left: 1em;
+    margin-right: 2em;
+}
+
+.bg-img {
+    /* Sizing */
+    width: 100vw;
+    height: 55vh;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Text styles */
+    text-align: center;
+    color: white;
+    /* Background styles */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-img h1 {
+    font-size: 2em;
+}
+
+.bg-img h2 {
+    color: white;
+}
+
+h2 {
+    font-size: 1em;
+    color: darkblue;
+}
+
+h3 {
+    font-size: 0.75em;
+}
+
+hr {
+    border-color: #3366cc;
+    border-style: dotted none none;
+    border-width: 0.625em;
+    width: 10%;
+    margin: 6.25em auto auto auto;
+}
+
+
+/* Page content */
+
+.content {
+    padding: 1em;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 3.75em;
+}
+
+.list-inline-item {
+    display: inline-block;
+    font-size: 2em;
+}
+
+.GitHub {
+    display: inline-block;
+    font-size: 2rem;
+    color: black;
+}
+
+.GitHub :hover {
+    color: #3366cc;
+}
+
+.coding-skills {
+    color: black;
+}
+
+.footer-link {
+    font-size: 2em;
+    color: black;
+}
+
+.footer-link :hover {
+    display: inline-block;
+    color: #3366cc;
+}
+
+.footer-link :visited {
+    color: black;
+}
+
+.mail {
+    color: black;
+}
+
+.facebook {
+    color: black;
+}
+
+.linkedin {
+    color: black;
+}
+
+.download {
+    background: #0b5394;
+    border-radius: 11px;
+    padding: 20px 45px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 10px/1 "Open Sans", sans-serif;
+    text-align: center;
+}
+
+
+/******************************** id /********************************/
+
+
+/* Style the navbar */
+
+#navbar {
+    overflow: hidden;
+    background-color: #3366cc;
+}
+
+
+/* Navbar links */
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.875em;
+    text-decoration: none;
+}
+
+#navbar :hover {
+    background-color: black;
+}
+
+
+/*Ipad or something similar*/
+
+@media only screen and (min-width: 760px) {
+    .middle-container {
+        margin-left: 5em;
+        margin-right: 7em;
+    }
+}
+
+
+/*Laptop or Pc*/
+
+@media only screen and (min-width: 1000px) {
+    .bg-img {
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
+        /* Flexbox stuff */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Text styles */
+        text-align: center;
+        color: white;
+        /* Background styles */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" prog.jpg ");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .bg-img h1 {
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.17em;
+    }
+    .middle-container {
+        margin-left: 12.5em;
+        margin-right: 25em;
+    }
+    .GitHub {
+        font-size: 3.5rem;
+    }
+    .list-inline-item {
+        font-size: 3.5rem;
+    }
+    .download {
+        font: normal bold 26px/1 "Open Sans", sans-serif;
+    }
+    .footer-link {
+        font-size: 3.5rem;
+    }
+    .bottom {
+        margin-bottom: 50px;
+    }
+}
